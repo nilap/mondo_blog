@@ -1,0 +1,5 @@
+<% title "#{@post.title}" %>
+
+<div id="post">
+    <%= render :partial => 'partials/post', :locals=>{:post=>@post} %>
+</div>

@@ -1,0 +1,12 @@
+log/*.log
+tmp/**/*
+config/database.yml
+db/*.sqlite3
+db/migrate/*_create_users.rb
+app/controllers/users_controller.rb
+app/controllers/sessions_controller.rb
+app/helpers/sessions_helper.rb
+app/helpers/users_helper.rb
+app/models/user.rb
+app/views/users/*
+app/views/sessions/*

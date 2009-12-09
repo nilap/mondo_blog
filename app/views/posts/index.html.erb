@@ -1,0 +1,7 @@
+<% title "Welcome to the News section of our site" %>
+<% if logged_in? %><p><%= link_to "Hello, click here to create a new article", new_post_path %></p><% end %>
+
+
+  <% for post in @posts %>
+        <%= render :partial => "partials/list_post", :locals=>{:post => post} %>
+  <% end %>

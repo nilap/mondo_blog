@@ -1,0 +1,4 @@
+<div class="list_post">
+<h3><%= link_to_unless_current h(post.title.capitalize), post_path(post) %></h3>
+Posted <%= time_ago_in_words(post.created_at) %> ago by <%= link_to post.user.username, user_path(post.user) %>
+</div>
